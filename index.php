@@ -1,7 +1,12 @@
 <?php
-require_once 'vendor/autoload.php';
-use config\Connect;
-use core\Router;
+require_once './vendor/autoload.php';
+define('ROOT_URL', 'http://php2.com');
+use app\src\core\Router;
+//use src\core\Database;
+//new Database();
+//use src\controllers\HomeController;
 
-$Connect = new Connect();
-$Router = new Router();
+session_start();
+$myApp = new Router();
+
+?>

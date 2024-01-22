@@ -1,0 +1,9 @@
+{
+    "name": "lmhoa/wd18302_php2_luong-minh-hoang",
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
+    },
+    "require": {}
+}
