@@ -5,19 +5,19 @@ namespace src\Controllers;
 
 use src\core\Controller;
 
-class BookController extends Controller
+class AuthorController extends Controller
 {
     function index()
     {
         $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $this->CallViewAdmin('Book');
+        $this->CallViewAdmin('Author');
         $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
     }
 
-    function bookadd()
+    function authoradd()
     {
         $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $this->CallViewAdmin('Bookadd');
+        $this->CallViewAdmin('Authoradd');
         $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
     }
 
