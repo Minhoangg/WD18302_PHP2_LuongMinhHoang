@@ -134,7 +134,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -150,7 +150,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -166,7 +166,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -182,7 +182,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -207,7 +207,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -223,7 +223,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -247,7 +247,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -327,7 +327,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -343,7 +343,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -359,7 +359,7 @@
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="rounded position-relative fruite-item">
                                         <div class="fruite-img">
-                                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                                         </div>
                                         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                         <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -439,7 +439,7 @@
         <div class="owl-carousel vegetable-carousel justify-content-center">
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -453,7 +453,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -467,7 +467,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -481,7 +481,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -495,7 +495,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -509,7 +509,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -523,7 +523,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -537,7 +537,7 @@
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
                 <div class="p-4 rounded-bottom">
@@ -597,7 +597,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -618,7 +618,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -639,7 +639,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -660,7 +660,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -681,7 +681,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -702,7 +702,7 @@
                 <div class="p-4 rounded bg-light">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded-circle w-100" alt="">
                         </div>
                         <div class="col-6">
                             <a href="#" class="h5">Organic Tomato</a>
@@ -721,7 +721,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="text-center">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
                     <div class="py-4">
                         <a href="#" class="h5">Organic Tomato</a>
                         <div class="d-flex my-3 justify-content-center">
@@ -738,7 +738,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="text-center">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
                     <div class="py-4">
                         <a href="#" class="h5">Organic Tomato</a>
                         <div class="d-flex my-3 justify-content-center">
@@ -755,7 +755,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="text-center">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
                     <div class="py-4">
                         <a href="#" class="h5">Organic Tomato</a>
                         <div class="d-flex my-3 justify-content-center">
@@ -772,7 +772,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="text-center">
-                    <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
+                    <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" alt="">
                     <div class="py-2">
                         <a href="#" class="h5">Organic Tomato</a>
                         <div class="d-flex my-3 justify-content-center">
@@ -850,7 +850,7 @@
                     </div>
                     <div class="d-flex align-items-center flex-nowrap">
                         <div class="bg-secondary rounded">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                         </div>
                         <div class="ms-4 d-block">
                             <h4 class="text-dark">Client Name</h4>
@@ -875,7 +875,7 @@
                     </div>
                     <div class="d-flex align-items-center flex-nowrap">
                         <div class="bg-secondary rounded">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                         </div>
                         <div class="ms-4 d-block">
                             <h4 class="text-dark">Client Name</h4>
@@ -900,7 +900,7 @@
                     </div>
                     <div class="d-flex align-items-center flex-nowrap">
                         <div class="bg-secondary rounded">
-                            <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                            <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
                         </div>
                         <div class="ms-4 d-block">
                             <h4 class="text-dark">Client Name</h4>

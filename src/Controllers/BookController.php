@@ -20,6 +20,4 @@ class BookController extends Controller
         $this->CallViewAdmin('Bookadd');
         $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
     }
-
 }
-

@@ -97,7 +97,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -113,7 +113,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -129,7 +129,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -145,7 +145,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -161,7 +161,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -177,7 +177,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="rounded position-relative fruite-item">
                                     <div class="fruite-img border border-secondary border-bottom-0 " >
-                                        <img src="../../../../upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
+                                        <img src="./upload/product/tu-tot-den-vi-dai.jpg" class="img-fluid w-100 rounded-top h-100" alt="">
                                     </div>
                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
                                     <div class="p-4 border border-secondary border-top-0 rounded-bottom">

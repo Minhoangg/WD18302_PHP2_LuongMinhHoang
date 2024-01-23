@@ -3,6 +3,7 @@
 
 
 namespace app\src\core;
+
 class Controller
 {
     public function CallModel($model)
