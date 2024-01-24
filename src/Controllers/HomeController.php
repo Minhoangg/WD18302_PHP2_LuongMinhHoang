@@ -10,16 +10,16 @@ class HomeController extends Controller
 {
     function index()
     {
-        $this->CallHeader('./src/Views/Client/Layout/Header.php');
-
-        // Pass data to the view
-        $this->CallViewClient('Home');
-        $this->CallFooter('./src/Views/Client/Layout/Footer.php');
+        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+        $this->CallViewAdmin('Home');
+        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
     }
 
-    function editBook($id)
+    function homeadd()
     {
-        echo 'sửa sản phẩm id' . $id;
+        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+        $this->CallViewAdmin('Homeadd');
+        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
     }
 
 }

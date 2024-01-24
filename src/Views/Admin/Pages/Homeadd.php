@@ -94,11 +94,10 @@
 
                             <div class="mb-3 text-center">
                                 <input type="submit" name="btn_insert" value="Thêm mới" class="btn btn-info mr-3">
-                                <a href="<?= ROOT_URL ?>/book"><input type="button"
+                                <a href="<?= ROOT_URL ?>/home"><input type="button"
                                                                                      class="btn btn-success"
                                                                                      value="Danh sách"></a>
                             </div>
-
                         </form>
                     </div>
                 </div>

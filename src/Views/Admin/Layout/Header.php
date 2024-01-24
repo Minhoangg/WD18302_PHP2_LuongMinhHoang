@@ -55,18 +55,9 @@
         <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
-                    <li class="active"><a href="<?= ROOT_URL ?>/dashboard"><i class="fas fa-tachometer-alt"></i>
-                            <span>Dashboard</span></a></li>
-                    <li class="list-divider"></li>
-
-                    <li class=""><a href="<?= ROOT_URL ?>/author"><i class="fas fa-tachometer-alt"></i>
-                            <span>Quản lí tác giả</span></a></li>
-                    <li class=""><a href="<?= ROOT_URL ?>/book"><i class="fas fa-tachometer-alt"></i>
+                    <li class="active"><a href="<?= ROOT_URL ?>/home"><i class="fas fa-tachometer-alt"></i>
                             <span>Quản lý sách</span></a></li>
-                    <li class=""><a href="<?= ROOT_URL ?>/category"><i class="fas fa-tachometer-alt"></i>
-                            <span>Quản lí loại sách</span></a></li>
-                    <li class=""><a href="<?= ROOT_URL ?>/user"><i class="fas fa-tachometer-alt"></i>
-                            <span>Quản lí người dùng</span></a></li>
+
                 </ul>
             </div>
         </div>

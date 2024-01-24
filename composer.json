@@ -5,5 +5,11 @@
             "app\\": "."
         }
     },
+    "authors": [
+        {
+            "name": "MinhHoang",
+            "email": "hoanglmpc07124@fpt.edu.vn"
+        }
+    ],
     "require": {}
 }
