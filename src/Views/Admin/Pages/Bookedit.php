@@ -5,7 +5,7 @@
                 <div class="card col-12 px-0">
                     <div class="card-header text-center bg-success-light  text-white text-uppercase">THÊM SÁCH</div>
                     <div class="card-body">
-                        <form method="POST" enctype="multipart/form-data" action="<?= ROOT_URL ?>/book/handleAdd">
+                        <form method="POST" enctype="multipart/form-data" action="<?= ROOT_URL ?>/book/handleEdit">
                             <div class="row">
                                 <div class="form-group col-sm-4">
                                     <label for="name_cate" class="form-label">Loại sách</label>
@@ -18,11 +18,7 @@
                                         ?>
                                     </select>
                                     <p style="color: red;">
-                                        <?php if (isset(  $_SESSION['errorId_category'])) {
-                                            foreach (  $_SESSION['errorId_category'] as $idCategory) {
-                                                echo $idCategory;
-                                            }
-                                        } ?>
+
                                     </p>
                                 </div>
                                 <div class="form-group col-sm-4">
@@ -36,11 +32,7 @@
                                         ?>
                                     </select>
                                     <p style="color: red;">
-                                        <?php if (isset( $_SESSION['errorId_author'])) {
-                                            foreach ( $_SESSION['errorId_author'] as $idAuthor) {
-                                                echo $idAuthor;
-                                            }
-                                        } ?>
+
                                     </p>
                                 </div>
                                 <div class="form-group col-sm-4">
@@ -48,11 +40,7 @@
                                     <input type="text" name="name_book" id="name_book" class="form-control"
                                            placeholder="Nhập tên sách">
                                     <p style="color: red;">
-                                        <?php if (isset( $_SESSION['errorName'])) {
-                                            foreach ( $_SESSION['errorName'] as $nameError) {
-                                                echo $nameError;
-                                            }
-                                        } ?>
+
                                     </p>
                                 </div>
 
@@ -63,11 +51,7 @@
                                     <input type="text" name="price_book" id="price_book" class="form-control"
                                            placeholder="Nhập giá sách">
                                     <p style="color: red;">
-                                        <?php if (isset( $_SESSION['errorPrice'])) {
-                                            foreach ( $_SESSION['errorPrice'] as $priceError) {
-                                                echo $priceError;
-                                            }
-                                        } ?>
+
                                     </p>
                                 </div>
                                 <div class="form-group col-sm-4">
@@ -75,11 +59,7 @@
                                     <input type="file" name="img_book" id="img_book" class="form-control"
                                            placeholder="Nhập ngày sản xuất">
                                     <p style="color: red;">
-                                        <?php if (isset( $_SESSION['errorImg'])) {
-                                            foreach ( $_SESSION['errorImg'] as $imgError) {
-                                                echo $imgError;
-                                            }
-                                        } ?>
+
                                     </p>
                                 </div>
                                 <div class="form-group col-sm-4">
@@ -87,11 +67,7 @@
                                     <input type="date" name="date_publication" id="date_publication"
                                            class="form-control" placeholder="Nhập ngày sản xuất">
                                     <p id="don_gia_error" style="color: red;">
-                                        <?php if (isset( $_SESSION['errorPublication_year'] )) {
-                                            foreach ( $_SESSION['errorPublication_year']  as $publicationError) {
-                                                echo $publicationError;
-                                            }
-                                        } ?>
+
                                     </p>
 
                                 </div>
@@ -104,22 +80,16 @@
                                               class="form-control form-control-lg mb-3 myTextarea" id="textareaExample"
                                               rows="3" placeholder="Nhập mô tả "></textarea>
                                     <p style="color: red;">
-                                        <?php if (isset(  $_SESSION['errorDescription'])) {
-                                            foreach (  $_SESSION['errorDescription'] as $descriptionError) {
-                                                echo $descriptionError;
-                                            }
-                                        } ?>
                                     </p>
                                 </div>
                             </div>
 
                             <div class="mb-3 text-center">
-                                <input type="submit" name="button_insert" value="Thêm mới" class="btn btn-info mr-3">
+                                <input type="submit" name="button_edit" value="Sửa" class="btn btn-info mr-3">
                                 <a href="<?= ROOT_URL ?>/book"><input type="button"
                                                                       class="btn btn-success"
                                                                       value="Danh sách"></a>
                             </div>
-
                         </form>
                     </div>
                 </div>

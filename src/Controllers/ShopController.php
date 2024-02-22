@@ -3,7 +3,7 @@
 
 namespace app\src\Controllers;
 
-use app\src\core\Controller;
+use app\src\Core\Controller;
 
 class ShopController extends Controller
 {

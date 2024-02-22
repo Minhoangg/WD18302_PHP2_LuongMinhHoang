@@ -2,17 +2,17 @@
 
 
 
-namespace app\src\core;
+namespace app\src\Core;
 
 class Controller
 {
-    public function CallModel($model)
+    public function CallModel( $model)
     {
-        $modelClass = "src\\Models\\" . $model;
+        $modelClass = "app\\src\\Models\\" . $model;
         return new $modelClass;
     }
 
-    public function CallViewAdmin($view, $data = [])
+    public function CallViewAdmin($view, $data = [] , $data_author = [], $data_category = [])
     {
         require "./src/Views/Admin/Pages/" . $view . ".php";
     }

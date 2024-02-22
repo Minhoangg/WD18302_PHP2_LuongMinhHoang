@@ -27,20 +27,24 @@
             <li class="nav-item dropdown has-arrow">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <span class="user-img"><img
                                 class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31"
-                                alt="Soeng Souy"></span> </a>
+                                alt="<?php if (isset($_SESSION['user'])) {
+                                    echo $_SESSION['user']['username'];
+                                } ?>"></span> </a>
                 <div class="dropdown-menu">
                     <div class="user-header">
                         <div class="avatar avatar-sm"><img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
                                                            class="avatar-img rounded-circle"></div>
                         <div class="user-text">
-                            <h6>Soeng Souy</h6>
+                            <h6><?php  if (isset($_SESSION['user'])){
+                                    echo $_SESSION['user']['username'];
+                                } ?></h6>
                             <p class="text-muted mb-0">Administrator</p>
                         </div>
                     </div>
                     <a class="dropdown-item" href="../../../../index.php">My Profile</a> <a class="dropdown-item"
                                                                                             href="../../../../index.php">Account
                         Settings</a> <a class="dropdown-item"
-                                        href="../../../../index.php">Logout</a>
+                                        href="<?= ROOT_URL ?>/admin/logout">Logout</a>
                 </div>
             </li>
         </ul>
@@ -51,6 +55,10 @@
             </form>
         </div>
     </div>
+    <a href="javascript:void(0);" id="toggle_btn"> <i class="fa-solid fa-bars"></i><?php if (isset($_SESSION['user'])){
+        echo $_SESSION['user']['username'];
+        }  ?></a>
+
     <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">

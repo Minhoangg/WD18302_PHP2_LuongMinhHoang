@@ -12,100 +12,41 @@
                             <table class="table table-hover table-center">
                                 <thead>
                                 <tr>
-                                    <th>Booking ID</th>
-                                    <th>Name</th>
-                                    <th>Email ID</th>
-                                    <th>Aadhar Number</th>
-                                    <th class="text-center">Room Type</th>
-                                    <th class="text-right">Number</th>
-                                    <th class="text-center">Status</th>
+                                    <th>Tên Sách</th>
+                                    <th>Giá</th>
+                                    <th>Hinh Ảnh</th>
+                                    <th>Năm sản xuất </th>
+                                    <th>Mô tả</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                foreach ($data as $row_data):
+                                ?>
                                 <tr>
                                     <td class="text-nowrap">
-                                        <div>BKG-0001</div>
+                                        <?= $row_data['name'] ?>
                                     </td>
-                                    <td class="text-nowrap">Tommy Bernal</td>
-                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                           data-cfemail="3743585a5a4e55524559565b77524f565a475b521954585a">[email&#160;protected]</a>
-                                    </td>
-                                    <td>12414786454545</td>
-                                    <td class="text-center">Double</td>
-                                    <td class="text-right">
-                                        <div>631-254-6480</div>
-                                    </td>
-                                    <td class="text-center"> <span
-                                                class="badge badge-pill bg-success inv-badge">INACTIVE</span>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-nowrap">
-                                        <div>BKG-0002</div>
+                                        <?= $row_data['price'] ?>
                                     </td>
-                                    <td class="text-nowrap">Ellen Thill</td>
-                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                           data-cfemail="89fbe0eae1e8fbedebfbe6ebfafdc9ecf1e8e4f9e5eca7eae6e4">[email&#160;protected]</a>
-                                    </td>
-                                    <td>5456223232322</td>
-                                    <td class="text-center">Double</td>
-                                    <td class="text-right">
-                                        <div>830-468-1042</div>
-                                    </td>
-                                    <td class="text-center"> <span
-                                                class="badge badge-pill bg-success inv-badge">INACTIVE</span>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-nowrap">
-                                        <div>BKG-0003</div>
+                                        <img src="../../upload/product/<?= $row_data['img']?>" alt="" width="50px" height="50px">
                                     </td>
-                                    <td class="text-nowrap">Corina Kelsey</td>
-                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                           data-cfemail="76131a1a1318021e1f1a1a36130e171b061a135815191b">[email&#160;protected]</a>
-                                    </td>
-                                    <td>454543232625</td>
-                                    <td class="text-center">Single</td>
-                                    <td class="text-right">
-                                        <div>508-335-5531</div>
-                                    </td>
-                                    <td class="text-center"> <span
-                                                class="badge badge-pill bg-success inv-badge">INACTIVE</span>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-nowrap">
-                                        <div>BKG-0004</div>
+                                        <?= $row_data['publication_year'] ?>
                                     </td>
-                                    <td class="text-nowrap">Carolyn Lane</td>
-                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                           data-cfemail="50333f22393e313b353c23352910373d31393c7e333f3d">[email&#160;protected]</a>
-                                    </td>
-                                    <td>2368989562621</td>
-                                    <td class="text-center">Double</td>
-                                    <td class="text-right">
-                                        <div>262-260-1170</div>
-                                    </td>
-                                    <td class="text-center"> <span
-                                                class="badge badge-pill bg-success inv-badge">INACTIVE</span>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-nowrap">
-                                        <div>BKG-0005</div>
+                                        <?= $row_data['description'] ?>
                                     </td>
-                                    <td class="text-nowrap">Denise</td>
-                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                           data-cfemail="1c7f7d6e73706572707d72795c7b717d7570327f7371">[email&#160;protected]</a>
+                                    <td class="d-flex justify-content-around"> <a href="<?= ROOT_URL ?>/author/edit/<?=$row_data['id']?>"
+                                                                                  class="badge badge-pill bg-warning inv-badge">Chỉnh sửa</a>
+                                        <a href="<?= ROOT_URL ?>/book/handleDelete/<?=$row_data['id']?>"
+                                           class="badge badge-pill bg-danger inv-badge">Xóa</a>
                                     </td>
-                                    <td>3245455582287</td>
-                                    <td class="text-center">Single</td>
-                                    <td class="text-right">
-                                        <div>570-458-0070</div>
-                                    </td>
-                                    <td class="text-center"> <span
-                                                class="badge badge-pill bg-success inv-badge">INACTIVE</span>
-                                    </td>
+                                    <?php
+                                    endforeach;
+                                    ?>
                                 </tr>
                                 </tbody>
                             </table>

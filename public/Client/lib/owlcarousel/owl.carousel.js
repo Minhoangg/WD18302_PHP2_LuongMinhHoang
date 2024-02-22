@@ -677,7 +677,7 @@
 	 */
 	Owl.prototype.registerEventHandlers = function() {
 		if ($.support.transition) {
-			this.$stage.on($.support.transition.end + '.owl.core', $.proxy(this.onTransitionEnd, this));
+			this.$stage.on($.support.transition.end + '.owl.Core', $.proxy(this.onTransitionEnd, this));
 		}
 
 		if (this.settings.responsive !== false) {
@@ -686,13 +686,13 @@
 
 		if (this.settings.mouseDrag) {
 			this.$element.addClass(this.options.dragClass);
-			this.$stage.on('mousedown.owl.core', $.proxy(this.onDragStart, this));
-			this.$stage.on('dragstart.owl.core selectstart.owl.core', function() { return false });
+			this.$stage.on('mousedown.owl.Core', $.proxy(this.onDragStart, this));
+			this.$stage.on('dragstart.owl.Core selectstart.owl.Core', function() { return false });
 		}
 
 		if (this.settings.touchDrag){
 			this.$stage.on('touchstart.owl.core', $.proxy(this.onDragStart, this));
-			this.$stage.on('touchcancel.owl.core', $.proxy(this.onDragEnd, this));
+			this.$stage.on('touchcancel.owl.Core', $.proxy(this.onDragEnd, this));
 		}
 	};
 
@@ -741,12 +741,12 @@
 		this._drag.stage.current = stage;
 		this._drag.pointer = this.pointer(event);
 
-		$(document).on('mouseup.owl.core touchend.owl.core', $.proxy(this.onDragEnd, this));
+		$(document).on('mouseup.owl.Core touchend.owl.Core', $.proxy(this.onDragEnd, this));
 
-		$(document).one('mousemove.owl.core touchmove.owl.core', $.proxy(function(event) {
+		$(document).one('mousemove.owl.Core touchmove.owl.Core', $.proxy(function(event) {
 			var delta = this.difference(this._drag.pointer, this.pointer(event));
 
-			$(document).on('mousemove.owl.core touchmove.owl.core', $.proxy(this.onDragMove, this));
+			$(document).on('mousemove.owl.Core touchmove.owl.Core', $.proxy(this.onDragMove, this));
 
 			if (Math.abs(delta.x) < Math.abs(delta.y) && this.is('valid')) {
 				return;
@@ -806,7 +806,7 @@
 			stage = this._drag.stage.current,
 			direction = delta.x > 0 ^ this.settings.rtl ? 'left' : 'right';
 
-		$(document).off('.owl.core');
+		$(document).off('.owl.Core');
 
 		this.$element.removeClass(this.options.grabClass);
 
@@ -819,7 +819,7 @@
 			this._drag.direction = direction;
 
 			if (Math.abs(delta.x) > 3 || new Date().getTime() - this._drag.time > 300) {
-				this._drag.target.one('click.owl.core', function() { return false; });
+				this._drag.target.one('click.owl.Core', function() { return false; });
 			}
 		}
 
@@ -1395,9 +1395,9 @@
 	 */
 	Owl.prototype.destroy = function() {
 
-		this.$element.off('.owl.core');
-		this.$stage.off('.owl.core');
-		$(document).off('.owl.core');
+		this.$element.off('.owl.Core');
+		this.$stage.off('.owl.Core');
+		$(document).off('.owl.Core');
 
 		if (this.settings.responsive !== false) {
 			window.clearTimeout(this.resizeTimer);
@@ -1672,7 +1672,7 @@
 					'next', 'prev', 'to', 'destroy', 'refresh', 'replace', 'add', 'remove'
 				], function(i, event) {
 					data.register({ type: Owl.Type.Event, name: event });
-					data.$element.on(event + '.owl.carousel.core', $.proxy(function(e) {
+					data.$element.on(event + '.owl.carousel.Core', $.proxy(function(e) {
 						if (e.namespace && e.relatedTarget !== this) {
 							this.suppress([ event ]);
 							data[event].apply(this, [].slice.call(arguments, 1));
@@ -1712,7 +1712,7 @@
 	 */
 	var AutoRefresh = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -1825,7 +1825,7 @@
 	var Lazy = function(carousel) {
 
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -1960,7 +1960,7 @@
 	 */
 	var AutoHeight = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -2058,7 +2058,7 @@
 	 */
 	var Video = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -2501,7 +2501,7 @@
 	 */
 	var Autoplay = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -2701,7 +2701,7 @@
 	 */
 	var Navigation = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */
@@ -3084,7 +3084,7 @@
 	 */
 	var Hash = function(carousel) {
 		/**
-		 * Reference to the core.
+		 * Reference to the Core.
 		 * @protected
 		 * @type {Owl}
 		 */

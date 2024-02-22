@@ -2,13 +2,13 @@
 
 
 
-namespace app\src\core;
+namespace app\src\Core;
 class Router
 {
     protected $controller ;
 
     protected $action ;
-    protected $params = [];
+    public $params = [];
 
 
     public function __construct()
