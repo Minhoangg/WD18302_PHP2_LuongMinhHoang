@@ -29,7 +29,7 @@ abstract class BaseRepository implements RepositoryInterface
 
     }
 
-    public function update(int $id, array $attributes = [])
+    public function update( $id,  $attributes = [])
     {
 
     }

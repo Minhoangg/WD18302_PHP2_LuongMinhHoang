@@ -62,7 +62,7 @@ class AuthorModel extends AuthorRepository
     public function updateAuthor($id, $data)
     {
         $this->update($id, $data);
-        header('location:' . ROOT_URL . '/author');
+//        header('location:' . ROOT_URL . '/author');
     }
 }
 

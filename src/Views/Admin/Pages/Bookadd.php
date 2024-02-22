@@ -22,6 +22,8 @@
                                             foreach (  $_SESSION['errorId_category'] as $idCategory) {
                                                 echo $idCategory;
                                             }
+                                            unset($_SESSION['errorId_category']);
+
                                         } ?>
                                     </p>
                                 </div>
@@ -40,6 +42,8 @@
                                             foreach ( $_SESSION['errorId_author'] as $idAuthor) {
                                                 echo $idAuthor;
                                             }
+                                            unset($_SESSION['errorId_author']);
+
                                         } ?>
                                     </p>
                                 </div>
@@ -52,6 +56,8 @@
                                             foreach ( $_SESSION['errorName'] as $nameError) {
                                                 echo $nameError;
                                             }
+                                            unset($_SESSION['errorName']);
+
                                         } ?>
                                     </p>
                                 </div>
@@ -67,6 +73,8 @@
                                             foreach ( $_SESSION['errorPrice'] as $priceError) {
                                                 echo $priceError;
                                             }
+                                            unset($_SESSION['errorPrice']);
+
                                         } ?>
                                     </p>
                                 </div>
@@ -79,6 +87,8 @@
                                             foreach ( $_SESSION['errorImg'] as $imgError) {
                                                 echo $imgError;
                                             }
+                                            unset($_SESSION['errorImg']);
+
                                         } ?>
                                     </p>
                                 </div>
@@ -91,6 +101,8 @@
                                             foreach ( $_SESSION['errorPublication_year']  as $publicationError) {
                                                 echo $publicationError;
                                             }
+                                            unset($_SESSION['errorPublication_year']);
+
                                         } ?>
                                     </p>
 
@@ -108,6 +120,8 @@
                                             foreach (  $_SESSION['errorDescription'] as $descriptionError) {
                                                 echo $descriptionError;
                                             }
+                                            unset($_SESSION['errorDescription']);
+
                                         } ?>
                                     </p>
                                 </div>

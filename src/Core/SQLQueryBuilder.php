@@ -143,17 +143,29 @@ trait SQLQueryBuilder
         return true;
     }
 
-    public function update($data)
-    {
-        $whereUpdate = str_replace('WHERE', '', $this->where);
-        $whereUpdate = trim($whereUpdate);
-        $tableName = $this->tableName;
-        $updateStatus = $this->updateData($tableName, $data, $whereUpdate);
-        return $updateStatus;
-    }
+//    public function update($data)
+//    {
+//        $whereUpdate = str_replace('WHERE', '', $this->where);
+//        $whereUpdate = trim($whereUpdate);
+//        $tableName = $this->tableName;
+//        $updateStatus = $this->updateData($tableName, $data, $whereUpdate);
+//        return $updateStatus;
+//    }
 
     public function updateData($id, $table, $data, $condition = '')
     {
+
+//        var_dump($id);
+//        echo '</br>';
+//        var_dump($table);
+//        echo '</br>';
+//
+//        var_dump($data);
+//        echo '</br>';
+//
+//        var_dump($condition);
+
+        echo '</br>';
         if (!empty($data)) {
             $updateStr = '';
             foreach ($data as $key => $value) {
@@ -166,7 +178,10 @@ trait SQLQueryBuilder
             $updateStr = rtrim($updateStr, ',');
             $sql = "UPDATE $table SET $updateStr";
             if (!empty($condition)) {
+
                 $sql = "UPDATE $table SET $updateStr WHERE $condition = $id";
+                var_dump($sql);
+
             }
             $status = $this->query($sql);
             if (!$status)

@@ -9,11 +9,10 @@
                             <div class="row">
                                 <div class="form-group col-sm-4">
                                     <label for="name_cate" class="form-label">Loại sách</label>
-                                    <select name="name_cate" class="form-control" id="name_cate">
-                                        <option value="">Chọn loại sách</option>
+                                    <select name="name_cate" class="form-control" id="name_cate" >
                                         <?php
-                                        foreach ($data_category as $infoCategory) {
-                                            echo '<option value="' . $infoCategory['id'] . '">' . $infoCategory['name'] . '</option>';
+                                        foreach ($data_category as $datacate){
+                                            echo '<option value="' . $datacate['id'] . '">' . $datacate['name'] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -24,10 +23,9 @@
                                 <div class="form-group col-sm-4">
                                     <label for="name_author" class="form-label">Tác giả</label>
                                     <select name="name_author" class="form-control" id="name_author">
-                                        <option value="">Chọn tác giả</option>
                                         <?php
-                                        foreach ($data_author as $infoAuthor) {
-                                            echo '<option value="' . $infoAuthor['id'] . '">' . $infoAuthor['full_name'] . '</option>';
+                                        foreach ($data_author as $dataauthor){
+                                            echo '<option value="' . $dataauthor['id'] . '">' . $dataauthor['full_name'] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -38,7 +36,7 @@
                                 <div class="form-group col-sm-4">
                                     <label for="name_book" class="form-label"> Tên sách</label>
                                     <input type="text" name="name_book" id="name_book" class="form-control"
-                                           placeholder="Nhập tên sách">
+                                           placeholder="Nhập tên sách" value="<?= $data['name'] ?>">
                                     <p style="color: red;">
 
                                     </p>
@@ -49,15 +47,15 @@
                                 <div class="form-group col-sm-4">
                                     <label for="price_book" class="form-label"> Giá sách</label>
                                     <input type="text" name="price_book" id="price_book" class="form-control"
-                                           placeholder="Nhập giá sách">
+                                           placeholder="Nhập giá sách" value="<?= $data['price'] ?>">
                                     <p style="color: red;">
 
                                     </p>
                                 </div>
                                 <div class="form-group col-sm-4">
                                     <label for="img_book" class="form-label">Ảnh sách</label>
-                                    <input type="file" name="img_book" id="img_book" class="form-control"
-                                           placeholder="Nhập ngày sản xuất">
+                                    <input type="hidden" name="img_book" id="img_book" class="form-control" value="<?= $data['img'] ?>">
+                                    <input type="file" name="up_img_book" id="up_img_book" class="form-control">
                                     <p style="color: red;">
 
                                     </p>
@@ -65,7 +63,7 @@
                                 <div class="form-group col-sm-4">
                                     <label for="date_publication" class="form-label">Ngày sản xuất</label>
                                     <input type="date" name="date_publication" id="date_publication"
-                                           class="form-control" placeholder="Nhập ngày sản xuất">
+                                           class="form-control" placeholder="Nhập ngày sản xuất" value="<?= $data['publication_year'] ?>" >
                                     <p id="don_gia_error" style="color: red;">
 
                                     </p>
@@ -78,11 +76,15 @@
                                     <label for="description_book" class="form-label">Mô tả sản phẩm</label>
                                     <textarea id="txtarea" spellcheck="false" name="description_book"
                                               class="form-control form-control-lg mb-3 myTextarea" id="textareaExample"
-                                              rows="3" placeholder="Nhập mô tả "></textarea>
+                                              rows="3" placeholder="Nhập mô tả " ><?= $data['description'] ?></textarea>
                                     <p style="color: red;">
                                     </p>
                                 </div>
-                            </div>
+                                <div class="form-group col-sm-4">
+                                    <input type="hidden" name="id_book" id="id_book"
+                                           class="form-control"
+                                           placeholder="Nhập quốc tịch " value="<?= $data['id'] ?>">
+                                </div>
 
                             <div class="mb-3 text-center">
                                 <input type="submit" name="button_edit" value="Sửa" class="btn btn-info mr-3">

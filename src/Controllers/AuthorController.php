@@ -54,19 +54,13 @@ class AuthorController extends Controller
         $model->deleteAuthor($id);
     }
 
-    function edit()
+    function edit($id)
     {
-        // lay id hien thông tin
-        $url = isset($_GET['url']) ? $_GET['url'] : '';
-        $urlParts = explode('/', $url);
-        $firstParam = isset($urlParts[2]) ? $urlParts[2] : null;
-
 
         $this->CallHeader('./src/Views/Admin/Layout/Header.php');
         $model = $this->CallModel('AuthorModel');
 
-        $data = $model->gettOne($firstParam);
-        var_dump($data);
+        $data = $model->gettOne($id);
 
         $this->CallViewAdmin('Authoredit', $data);
         $this->CallFooter('./src/Views/Admin/Layout/Footer.php');

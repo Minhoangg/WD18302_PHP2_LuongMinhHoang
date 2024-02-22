@@ -17,6 +17,7 @@
                                             foreach ( $_SESSION['errorName'] as $emailError) {
                                                 echo $emailError;
                                             }
+                                            unset($_SESSION['errorName']);
                                         } ?>
                                     </p>
                                 </div>
@@ -29,6 +30,8 @@
                                             foreach ( $_SESSION['errorDate'] as $emailError) {
                                                 echo $emailError;
                                             }
+                                            unset($_SESSION['errorDate']);
+
                                         } ?>
                                     </p>
 
@@ -43,6 +46,7 @@
                                             foreach ( $_SESSION['errorNationality'] as $emailError) {
                                                 echo $emailError;
                                             }
+                                            unset($_SESSION['errorNationality']);
                                         } ?>
                                     </p>
                                 </div>

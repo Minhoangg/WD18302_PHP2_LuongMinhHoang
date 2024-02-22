@@ -39,7 +39,7 @@
                                     <td class="text-nowrap">
                                         <?= $row_data['description'] ?>
                                     </td>
-                                    <td class="d-flex justify-content-around"> <a href="<?= ROOT_URL ?>/author/edit/<?=$row_data['id']?>"
+                                    <td class="d-flex justify-content-around"> <a href="<?= ROOT_URL ?>/book/bookEdit/<?=$row_data['id']?>"
                                                                                   class="badge badge-pill bg-warning inv-badge">Chỉnh sửa</a>
                                         <a href="<?= ROOT_URL ?>/book/handleDelete/<?=$row_data['id']?>"
                                            class="badge badge-pill bg-danger inv-badge">Xóa</a>
