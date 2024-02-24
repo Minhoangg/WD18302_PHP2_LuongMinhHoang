@@ -38,7 +38,7 @@ class ProductRepository extends BaseRepository
     public function remove(int $id)
     {
         var_dump($this->tableName);
-//        return $this->deleteData($this->tableName, 'id=' . $id);
+        return $this->deleteData($this->tableName, 'id=' . $id);
     }
 
     public function selectAuthor()

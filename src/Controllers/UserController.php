@@ -15,7 +15,6 @@ class UserController extends Controller
             $model = $this->CallModel('UserModel');
             $data = $model->getAllUser();
 
-            var_dump($data);
             $this->CallViewAdmin('User', $data);
             $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
         }
@@ -56,8 +55,9 @@ class UserController extends Controller
         $model->deleteUser($id);
     }
 
-    function useredit($id)
+    function userEdit($id)
     {
+        var_dump($id);
 
         $this->CallHeader('./src/Views/Admin/Layout/Header.php');
         $model = $this->CallModel('UserModel');
