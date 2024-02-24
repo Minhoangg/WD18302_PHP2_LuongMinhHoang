@@ -15,7 +15,7 @@
                                     <th>Họ và tên </th>
                                     <th>Tên đăng nhập </th>
                                     <th>Email</th>
-                                    <th>Role</th>
+                                    <th>Vai trò</th>
                                 </tr>
                                 </thead>
                                 <tbody>

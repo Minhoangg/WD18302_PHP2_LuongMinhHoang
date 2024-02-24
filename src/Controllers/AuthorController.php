@@ -4,6 +4,7 @@
 namespace app\src\Controllers;
 
 use app\src\Core\Controller;
+use Exception;
 
 class AuthorController extends Controller
 {
@@ -49,9 +50,14 @@ class AuthorController extends Controller
 
     function handleDelete($id)
     {
-        $model = $this->CallModel('AuthorModel');
+        try {
+            $model = $this->CallModel('AuthorModel');
 
-        $model->deleteAuthor($id);
+            $model->deleteAuthor($id);
+        }catch(Exception $e){
+            echo 'ko dc';
+        }
+
     }
 
     function edit($id)

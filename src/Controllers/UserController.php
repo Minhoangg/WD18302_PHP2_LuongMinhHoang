@@ -15,7 +15,6 @@ class UserController extends Controller
             $model = $this->CallModel('UserModel');
             $data = $model->getAllUser();
 
-            var_dump($data);
             $this->CallViewAdmin('User', $data);
             $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
         }
@@ -56,9 +55,8 @@ class UserController extends Controller
         $model->deleteUser($id);
     }
 
-    function useredit($id)
+    function userEdit($id)
     {
-
         $this->CallHeader('./src/Views/Admin/Layout/Header.php');
         $model = $this->CallModel('UserModel');
 
@@ -72,17 +70,20 @@ class UserController extends Controller
     {
 
         if (isset($_POST['button_edit'])) {
-            $model = $this->CallModel('AuthorModel');
+            $model = $this->CallModel('UserModel');
 
-            $id = $_POST['id_author'];
+            $id = $_POST['id_book'];
+
 
             $data = [
-                'full_name' => $_POST['name_author'],
-                'date_of_birth' => $_POST['date_birth_author'],
-                'nationality' => $_POST['nationality_author']
+                'full_name' => $_POST['full_name'],
+                'username' => $_POST['user_name'],
+                'email' => $_POST['email'],
+                'role' => $_POST['role'],
             ];
 
-            $model->updateAuthor($id, $data);
+
+            $model->updateUser($id, $data);
         }
     }
 }

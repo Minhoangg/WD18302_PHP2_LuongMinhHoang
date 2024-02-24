@@ -24,21 +24,18 @@ class ProductRepository extends BaseRepository
 
     public function create(array $attributes = [])
     {
-        var_dump($this->tableName);
         $this->insert($attributes);
     }
 
     public function update($id, $attributes = [])
     {
-        var_dump($this->tableName);
-
         return $this->updateData($id, $this->tableName, $attributes, 'id');
     }
 
     public function remove(int $id)
     {
         var_dump($this->tableName);
-//        return $this->deleteData($this->tableName, 'id=' . $id);
+        return $this->deleteData($this->tableName, 'id=' . $id);
     }
 
     public function selectAuthor()

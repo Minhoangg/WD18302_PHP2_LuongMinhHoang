@@ -47,7 +47,18 @@ class UserModel extends UserRepository
 
             header('location: ' . ROOT_URL . '/user/useradd');
         }else{
-            $this->create($data);
+
+            $pass_hash = password_hash($data['password'], PASSWORD_DEFAULT);
+
+
+            $dataUser = [
+                'full_name' => $_POST['full_name'],
+                'username' => $_POST['user_name'],
+                'password' => $pass_hash,
+                'email' => $_POST['email'],
+                'role' => $_POST['role'],
+            ];
+            $this->create($dataUser);
             header('location:' . ROOT_URL . '/user');
         }
 
@@ -65,10 +76,10 @@ class UserModel extends UserRepository
         return $data;
     }
 
-    public function updateAuthor($id, $data)
+    public function updateUser($id, $data)
     {
         $this->update($id, $data);
-//        header('location:' . ROOT_URL . '/author');
+        header('location:' . ROOT_URL . '/user');
     }
 }
 

@@ -4,7 +4,7 @@
 namespace app\src\Controllers;
 
 use app\src\Core\Controller;
-
+use Exception;
 class CategoryController extends Controller
 {
     function index()
@@ -21,8 +21,13 @@ class CategoryController extends Controller
 
     function handleDelete($id)
     {
-        $model = $this->CallModel('CategoryModel');
-        $model->deleteCategory($id);
+        try {
+            $model = $this->CallModel('CategoryModel');
+            $model->deleteCategory($id);
+        }catch (Exception $e){
+            echo 'khong xoa duoc';
+        }
+
     }
 
     function categoryadd()

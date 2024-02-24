@@ -17,7 +17,7 @@ class ProductModel extends ProductRepository
     public function deleteBook($id)
     {
         $status = $this->remove($id);
-//        header('location:' . ROOT_URL . '/book');
+        header('location:' . ROOT_URL . '/book');
     }
 
     public function addBook($data)
@@ -81,7 +81,7 @@ class ProductModel extends ProductRepository
 
                 $this->create($book_data);
 
-//                header('Location: ' . ROOT_URL . '/book');
+                header('Location: ' . ROOT_URL . '/book');
                 exit();
         }
     }

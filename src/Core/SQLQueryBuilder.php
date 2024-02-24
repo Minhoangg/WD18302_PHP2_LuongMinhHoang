@@ -154,18 +154,6 @@ trait SQLQueryBuilder
 
     public function updateData($id, $table, $data, $condition = '')
     {
-
-//        var_dump($id);
-//        echo '</br>';
-//        var_dump($table);
-//        echo '</br>';
-//
-//        var_dump($data);
-//        echo '</br>';
-//
-//        var_dump($condition);
-
-        echo '</br>';
         if (!empty($data)) {
             $updateStr = '';
             foreach ($data as $key => $value) {

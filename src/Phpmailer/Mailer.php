@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace app\src\Phpmailer;
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -9,32 +7,41 @@ use PHPMailer\PHPMailer\Exception;
 
 class Mailer
 {
-    public function sendEmail($to, $subject, $body) {
-        $mail = new PHPMailer(true);
+    public function sendEmail($subject_content, $body_content, $email_address)
+    {
 
-        try {
-            // Cài đặt thông tin SMTP
-            $mail->isSMTP();
-            $mail->Host = 'smtp.example.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'your@example.com';
-            $mail->Password = 'yourpassword';
-            $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
+        $mail = new PHPMailer();
 
-            // Thiết lập thông tin email
-            $mail->setFrom('your@example.com', 'Your Name');
-            $mail->addAddress($to);
+        $mail->IsSMTP(); // enable SMTP
 
-            // Thiết lập tiêu đề và nội dung email
-            $mail->Subject = $subject;
-            $mail->Body    = $body;
+        $mail->SMTPAuth = true; // authentication enabled
+        $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 465; // or 587
+        $mail->IsHTML(true);
+        $mail->Username = "lmhoang698@gmail.com";
+        $mail->Password = "txha jogq qoee qeib";
 
-            // Gửi email
-            $mail->send();
-            return true;
-        } catch (Exception $e) {
-            return false;
+        $emailSetfrom = 'lmhoang698@gmail.com';
+
+        $name = 'Lương Minh Hoàng';
+        $encoded_subject = mb_encode_mimeheader($name, 'UTF-8');
+
+
+        $mail->SetFrom($emailSetfrom, $encoded_subject);
+
+        $subject = $subject_content;
+        $encoded_subject = mb_encode_mimeheader($subject, 'UTF-8');
+
+        $mail->Subject = $encoded_subject;
+        $mail->Body = $body_content;
+
+        $mail->AddAddress($email_address);
+
+        if (!$mail->Send()) {
+            echo 'thất bại';
+        } else {
+            echo 'ok';
         }
     }
 }

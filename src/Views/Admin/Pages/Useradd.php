@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row mt-5 m-auto">
                 <div class="card col-12 px-0">
-                    <div class="card-header text-center bg-success-light  text-white text-uppercase">Thêm Tác Giả</div>
+                    <div class="card-header text-center bg-success-light  text-white text-uppercase">THÊM TÀI KHOẢNG</div>
                     <div class="card-body">
                         <form method="POST" action="<?= ROOT_URL ?>/user/handleAdd"
                         >

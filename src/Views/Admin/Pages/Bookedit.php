@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row mt-5 m-auto">
                 <div class="card col-12 px-0">
-                    <div class="card-header text-center bg-success-light  text-white text-uppercase">THÊM SÁCH</div>
+                    <div class="card-header text-center bg-success-light  text-white text-uppercase">SỬA SÁCH</div>
                     <div class="card-body">
                         <form method="POST" enctype="multipart/form-data" action="<?= ROOT_URL ?>/book/handleEdit">
                             <div class="row">
@@ -11,8 +11,15 @@
                                     <label for="name_cate" class="form-label">Loại sách</label>
                                     <select name="name_cate" class="form-control" id="name_cate" >
                                         <?php
-                                        foreach ($data_category as $datacate){
-                                            echo '<option value="' . $datacate['id'] . '">' . $datacate['name'] . '</option>';
+
+                                        foreach ($data_category as $datacate) {
+
+                                            if ($datacate['id'] == $data['id_category']) {
+                                                $s = "selected";
+                                            } else {
+                                                $s = "";
+                                            }
+                                            echo '<option ' . $s . ' value="' . $datacate['id'] . '">' . $datacate['name'] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -24,8 +31,15 @@
                                     <label for="name_author" class="form-label">Tác giả</label>
                                     <select name="name_author" class="form-control" id="name_author">
                                         <?php
-                                        foreach ($data_author as $dataauthor){
-                                            echo '<option value="' . $dataauthor['id'] . '">' . $dataauthor['full_name'] . '</option>';
+
+                                        foreach ($data_author as $dataauthor) {
+
+                                            if ($dataauthor['id'] == $data['id_author']) {
+                                                $s = "selected";
+                                            } else {
+                                                $s = "";
+                                            }
+                                            echo '<option ' . $s . ' value="' . $dataauthor['id'] . '">' . $dataauthor['full_name'] . '</option>';
                                         }
                                         ?>
                                     </select>
