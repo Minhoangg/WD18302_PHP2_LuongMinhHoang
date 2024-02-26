@@ -7,6 +7,7 @@
                     <div class="card-body">
                         <form method="POST" action="<?= ROOT_URL ?>/user/handleEdit"
                         >
+
                             <div class="row">
                                 <div class="form-group col-sm-4">
                                     <label for="full_name" class="form-label">Họ và tên</label>
