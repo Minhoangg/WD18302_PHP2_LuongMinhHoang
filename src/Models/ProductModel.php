@@ -29,7 +29,7 @@ class ProductModel extends ProductRepository
             'name' => 'empty',
             'price' => 'empty',
             'img' => 'empty',
-            'publication_year' => 'empty',
+            'publication_year' => 'empty|dateOfBirth',
             'description' => 'empty',
             'id_category' => 'empty',
             'id_author' => 'empty'

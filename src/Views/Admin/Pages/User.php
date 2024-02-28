@@ -33,7 +33,11 @@
                                         <?= $row_data['email'] ?>
                                     </td>
                                     <td class="text-nowrap">
-                                        <?= $row_data['role'] ?>
+                                        <?php if ($row_data['role'] == 1){
+                                            echo 'Nhân viên';
+                                        }else if($row_data['role'] == 2){
+                                            echo ' Khách hàng';
+                                        } ?>
                                     </td>
                                     <td class="d-flex justify-content-around"> <a href="<?= ROOT_URL ?>/user/userEdit/<?=$row_data['id']?>"
                                                                                   class="badge badge-pill bg-warning inv-badge">Chỉnh sửa</a>

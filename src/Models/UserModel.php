@@ -22,7 +22,7 @@ class UserModel extends UserRepository
             'full_name'=>'empty',
             'username' => 'empty|userExist',
             'password' => 'empty|password',
-            'email' => 'empty|emailExist',
+            'email' => 'empty|emailExist|email',
             'role' => 'empty',
         ];
 
