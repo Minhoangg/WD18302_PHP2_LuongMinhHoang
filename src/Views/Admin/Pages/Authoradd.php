@@ -38,9 +38,13 @@
                                 </div>
                                 <div class="form-group col-sm-4">
                                     <label for="nationality_author" class="form-label">Quốc tịch</label>
-                                    <input type="text" name="nationality_author" id="nationality_author"
-                                           class="form-control"
-                                           placeholder="Nhập quốc tịch ">
+                                    <select name="nationality_author" id="nationality_author" class="form-control">
+                                        <?php
+                                        foreach ($data as $country) {
+                                        echo '<option value="' . $country["name"]["common"] . '">' . $country["name"]["common"] . '</option>';
+                                        }
+                                        ?>
+                                        </select>
                                     <p style="color: red;">
                                         <?php if (isset( $_SESSION['errorNationality'])) {
                                             foreach ( $_SESSION['errorNationality'] as $emailError) {

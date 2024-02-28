@@ -32,58 +32,70 @@ class UserController extends Controller
 
     function handleAdd()
     {
-        $model = $this->CallModel('UserModel');
+        if (isset($_SESSION['user'])) {
 
-        if (isset($_POST['button_insert'])) {
+            $model = $this->CallModel('UserModel');
 
-            $data = [
-                'full_name' => $_POST['full_name'],
-                'username' => $_POST['user_name'],
-                'password' => $_POST['password'],
-                'email' => $_POST['email'],
-                'role' => $_POST['role'],
-            ];
+            if (isset($_POST['button_insert'])) {
 
-            $model->addUser($data);
+                $data = [
+                    'full_name' => $_POST['full_name'],
+                    'username' => $_POST['user_name'],
+                    'password' => $_POST['password'],
+                    'email' => $_POST['email'],
+                    'role' => $_POST['role'],
+                ];
+
+                $model->addUser($data);
+            }
         }
     }
 
     function handleDelete($id)
     {
-        $model = $this->CallModel('UserModel');
+        if (isset($_SESSION['user'])) {
 
-        $model->deleteUser($id);
+            $model = $this->CallModel('UserModel');
+
+            $model->deleteUser($id);
+        }
     }
 
     function userEdit($id)
     {
-        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $model = $this->CallModel('UserModel');
+        if (isset($_SESSION['user'])) {
 
-        $data = $model->gettOne($id);
+            $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+            $model = $this->CallModel('UserModel');
 
-        $this->CallViewAdmin('Useredit', $data);
-        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+            $data = $model->gettOne($id);
+
+            $this->CallViewAdmin('Useredit', $data);
+            $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+        }
     }
 
     function handleEdit()
     {
-
-        if (isset($_POST['button_edit'])) {
-            $model = $this->CallModel('UserModel');
-
-            $id = $_POST['id_book'];
+        if (isset($_SESSION['user'])) {
 
 
-            $data = [
-                'full_name' => $_POST['full_name'],
-                'username' => $_POST['user_name'],
-                'email' => $_POST['email'],
-                'role' => $_POST['role'],
-            ];
+            if (isset($_POST['button_edit'])) {
+                $model = $this->CallModel('UserModel');
+
+                $id = $_POST['id_book'];
 
 
-            $model->updateUser($id, $data);
+                $data = [
+                    'full_name' => $_POST['full_name'],
+                    'username' => $_POST['user_name'],
+                    'email' => $_POST['email'],
+                    'role' => $_POST['role'],
+                ];
+
+
+                $model->updateUser($id, $data);
+            }
         }
     }
 }

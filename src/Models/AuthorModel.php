@@ -21,7 +21,7 @@ class AuthorModel extends AuthorRepository
         extract($data);
         $validateRules = [
             'name'=>'empty',
-            'date' => 'empty',
+            'date' => 'empty|dateOfBirth',
             'nationality' => 'empty'
         ];
 
@@ -62,8 +62,9 @@ class AuthorModel extends AuthorRepository
     public function updateAuthor($id, $data)
     {
         $this->update($id, $data);
-//        header('location:' . ROOT_URL . '/author');
+        header('location:' . ROOT_URL . '/author');
     }
+
 }
 
 ?>

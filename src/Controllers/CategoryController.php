@@ -5,29 +5,36 @@ namespace app\src\Controllers;
 
 use app\src\Core\Controller;
 use Exception;
+
 class CategoryController extends Controller
 {
     function index()
     {
-        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+        if (isset($_SESSION['user'])) {
 
-        $model = $this->CallModel('CategoryModel');
-        $data = $model->getAllCategory();
+            $this->CallHeader('./src/Views/Admin/Layout/Header.php');
 
-        $this->CallViewAdmin('Category', $data);
+            $model = $this->CallModel('CategoryModel');
+            $data = $model->getAllCategory();
 
-        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+            $this->CallViewAdmin('Category', $data);
+
+            $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+        }
     }
 
     function handleDelete($id)
     {
-        try {
-            $model = $this->CallModel('CategoryModel');
-            $model->deleteCategory($id);
-        }catch (Exception $e){
-            echo 'khong xoa duoc';
-        }
+        if (isset($_SESSION['user'])) {
 
+            try {
+                $model = $this->CallModel('CategoryModel');
+                $model->deleteCategory($id);
+            } catch (Exception $e) {
+                echo 'khong xoa duoc';
+            }
+
+        }
     }
 
     function categoryadd()
@@ -41,46 +48,52 @@ class CategoryController extends Controller
 
     function handleAdd()
     {
+        if (isset($_SESSION['user'])) {
 
-        if (isset($_POST['button_insert'])) {
+            if (isset($_POST['button_insert'])) {
 
-            $model = $this->CallModel('CategoryModel');
+                $model = $this->CallModel('CategoryModel');
 
-            $data = [
-                'name' => $_POST['name_category'],
-            ];
-            $model->addCategory($data);
+                $data = [
+                    'name' => $_POST['name_category'],
+                ];
+                $model->addCategory($data);
+            }
         }
     }
 
     function categoryEdit($id)
     {
+        if (isset($_SESSION['user'])) {
 
-        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $model = $this->CallModel('CategoryModel');
+            $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+            $model = $this->CallModel('CategoryModel');
 
-        $data = $model->gettOne($id);
+            $data = $model->gettOne($id);
 
-        $this->CallViewAdmin('Categoryedit', $data);
-        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+            $this->CallViewAdmin('Categoryedit', $data);
+            $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+        }
     }
 
     function handleEdit()
     {
-        if (isset($_POST['button_edit'])) {
-            $model = $this->CallModel('CategoryModel');
+        if (isset($_SESSION['user'])) {
 
-            $id = $_POST['id_category'];
+            if (isset($_POST['button_edit'])) {
+                $model = $this->CallModel('CategoryModel');
 
-            $data = [
-                'name' => $_POST['name_category'],
-            ];
+                $id = $_POST['id_category'];
 
-            var_dump($data);
+                $data = [
+                    'name' => $_POST['name_category'],
+                ];
 
-            $model->updateCategory($id, $data);
+                var_dump($data);
+
+                $model->updateCategory($id, $data);
+            }
         }
     }
-
 }
 

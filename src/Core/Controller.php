@@ -12,7 +12,7 @@ class Controller
         return new $modelClass;
     }
 
-    public function CallViewAdmin($view, $data = [] , $data_author = [], $data_category = [])
+    public function CallViewAdmin($view, $data = [] , $data_author = [], $data_category = [], $data_country = [])
     {
         require "./src/Views/Admin/Pages/" . $view . ".php";
     }

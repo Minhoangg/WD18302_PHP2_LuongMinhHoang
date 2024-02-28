@@ -3,10 +3,10 @@
 
 namespace app\src\Models;
 
-use app\src\Repositorys\LoginReponsitory;
+use app\src\Repositorys\LoginRepository;
 use app\src\Validate\Validator;
 
-class LoginAdminModel extends LoginReponsitory
+class LoginAdminModel extends LoginRepository
 {
 
     function LoginAdmin($email, $password)

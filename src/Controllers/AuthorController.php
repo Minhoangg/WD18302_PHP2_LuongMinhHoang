@@ -3,6 +3,7 @@
 
 namespace app\src\Controllers;
 
+use app\src\Api\ApiCountries;
 use app\src\Core\Controller;
 use Exception;
 
@@ -26,15 +27,27 @@ class AuthorController extends Controller
     function authoradd()
     {
         if (isset($_SESSION['user'])) {
+
+            $urlApi = "https://restcountries.com/v3.1/all";
+
+
+            $apiModel = new ApiCountries($urlApi);
+
+            $dataApi = $apiModel->getCountriesData();
+
+
             $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-            $this->CallViewAdmin('Authoradd');
+            $this->CallViewAdmin('Authoradd', $dataApi);
             $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
         }
     }
 
     function handleAdd()
     {
-        $model = $this->CallModel('AuthorModel');
+
+        if (isset($_SESSION['user'])) {
+
+            $model = $this->CallModel('AuthorModel');
 
         if (isset($_POST['button_insert'])) {
 
@@ -45,48 +58,62 @@ class AuthorController extends Controller
             ];
             $model->addAuthor($data);
         }
+        }
 
     }
 
     function handleDelete($id)
     {
-        try {
-            $model = $this->CallModel('AuthorModel');
+        if (isset($_SESSION['user'])) {
 
-            $model->deleteAuthor($id);
-        }catch(Exception $e){
-            echo 'ko dc';
+            try {
+                $model = $this->CallModel('AuthorModel');
+
+                $model->deleteAuthor($id);
+            } catch (Exception $e) {
+                echo 'ko dc';
+            }
         }
-
     }
 
     function edit($id)
     {
+        if (isset($_SESSION['user'])) {
 
-        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $model = $this->CallModel('AuthorModel');
+            $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+            $model = $this->CallModel('AuthorModel');
 
-        $data = $model->gettOne($id);
+            $urlApi = "https://restcountries.com/v3.1/all";
 
-        $this->CallViewAdmin('Authoredit', $data);
-        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+
+            $apiModel = new ApiCountries($urlApi);
+
+            $data_country = $apiModel->getCountriesData();
+
+            $data = $model->gettOne($id);
+
+            $this->CallViewAdmin('Authoredit', $data, $data_author = [], $data_category = [], $data_country);
+            $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+        }
     }
 
     function handleEdit()
     {
+        if (isset($_SESSION['user'])) {
 
-        if (isset($_POST['button_edit'])) {
-            $model = $this->CallModel('AuthorModel');
+            if (isset($_POST['button_edit'])) {
+                $model = $this->CallModel('AuthorModel');
 
-            $id = $_POST['id_author'];
+                $id = $_POST['id_author'];
 
-            $data = [
-                'full_name' => $_POST['name_author'],
-                'date_of_birth' => $_POST['date_birth_author'],
-                'nationality' => $_POST['nationality_author']
-            ];
+                $data = [
+                    'full_name' => $_POST['name_author'],
+                    'date_of_birth' => $_POST['date_birth_author'],
+                    'nationality' => $_POST['nationality_author']
+                ];
 
-            $model->updateAuthor($id, $data);
+                $model->updateAuthor($id, $data);
+            }
         }
     }
 

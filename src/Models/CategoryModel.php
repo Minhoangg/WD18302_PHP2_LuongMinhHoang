@@ -31,7 +31,6 @@ class CategoryModel extends CategoryRepository
 
         $errors = $validate->getErrors();
 
-        var_dump($errors);
         if (!empty($errors)) {
             $_SESSION['errorName'] = $errors['name'];
 

@@ -19,7 +19,8 @@
                                 <div class="form-group col-sm-4">
                                     <label for="date_birth_author" class="form-label">Ngày sinh </label>
                                     <input type="date" name="date_birth_author" id="date_birth_author"
-                                           class="form-control" placeholder="Nhập ngày sinh" value="<?= $data['date_of_birth'] ?>">
+                                           class="form-control" placeholder="Nhập ngày sinh"
+                                           value="<?= $data['date_of_birth'] ?>">
                                     <p style="color: red;">
 
                                     </p>
@@ -27,9 +28,20 @@
                                 </div>
                                 <div class="form-group col-sm-4">
                                     <label for="nationality_author" class="form-label">Quốc tịch</label>
-                                    <input type="text" name="nationality_author" id="nationality_author"
-                                           class="form-control"
-                                           placeholder="Nhập quốc tịch " value="<?= $data['nationality'] ?>">
+                                    <select name="nationality_author" class="form-control" id="nationality_author">
+                                        <?php
+
+                                                                                foreach ($data_country as $datacountry) {
+
+                                                                                    if ($datacountry["name"]["common"] == $data['nationality']) {
+                                                                                        $s = "selected";
+                                                                                    } else {
+                                                                                        $s = "";
+                                                                                    }
+                                                                                    echo '<option ' . $s . ' value="' . $datacountry["name"]["common"]. '">' . $datacountry["name"]["common"] . '</option>';
+                                                                                }
+                                        ?>
+                                    </select>
                                     <p style="color: red;">
                                     </p>
                                 </div>

@@ -40,7 +40,6 @@
         </div>
         <input type="submit" value="Đăng nhập" name="login">
 
-        <div class= "" > <a href="<?= ROOT_URL ?>/admin/emailForgot">  Forgot Password   </a> </div>
     </form>
 </div>
 

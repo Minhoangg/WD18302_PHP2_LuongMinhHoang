@@ -20,9 +20,9 @@ class UserModel extends UserRepository
 
         $validateRules = [
             'full_name'=>'empty',
-            'username' => 'empty',
-            'password' => 'empty',
-            'email' => 'empty',
+            'username' => 'empty|userExist',
+            'password' => 'empty|password',
+            'email' => 'empty|emailExist',
             'role' => 'empty',
         ];
 

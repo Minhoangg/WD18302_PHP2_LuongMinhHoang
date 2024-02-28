@@ -27,7 +27,7 @@
                                     value="<?= $data['id']?>">
 
                             <div class="mb-3 text-center">
-                                <input type="submit" name="button_edit" value="Thêm mới" class="btn btn-info mr-3">
+                                <input type="submit" name="button_edit" value=" Sửa " class="btn btn-info mr-3">
                                 <a href="<?= ROOT_URL ?>/category"><input type="button"
                                                                           class="btn btn-success"
                                                                           value="Danh sách"></a>

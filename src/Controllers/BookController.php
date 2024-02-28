@@ -40,66 +40,78 @@ class BookController extends Controller
 
     function handleDelete($id)
     {
-        $model = $this->CallModel('ProductModel');
-        $model->deleteBook($id);
+        if (isset($_SESSION['user'])) {
+
+            $model = $this->CallModel('ProductModel');
+            $model->deleteBook($id);
+        }
     }
 
     function handleAdd()
     {
+        if (isset($_SESSION['user'])) {
 
-        $model = $this->CallModel('ProductModel');
 
-        if (isset($_POST['button_insert'])) {
+            $model = $this->CallModel('ProductModel');
 
-            $data = [
-                'name' => $_POST['name_book'],
-                'price' => $_POST['price_book'],
-                'img' => $_FILES["img_book"],
-                'publication_year' => $_POST['date_publication'],
-                'description' => $_POST['description_book'],
-                'id_category' => $_POST['name_cate'],
-                'id_author' => $_POST['name_author']
-            ];
-            $model->addBook($data);
+            if (isset($_POST['button_insert'])) {
+
+                $data = [
+                    'name' => $_POST['name_book'],
+                    'price' => $_POST['price_book'],
+                    'img' => $_FILES["img_book"],
+                    'publication_year' => $_POST['date_publication'],
+                    'description' => $_POST['description_book'],
+                    'id_category' => $_POST['name_cate'],
+                    'id_author' => $_POST['name_author']
+                ];
+                $model->addBook($data);
+            }
         }
     }
 
 
     function bookEdit($id)
     {
-        $this->CallHeader('./src/Views/Admin/Layout/Header.php');
-        $model = $this->CallModel('ProductModel');
+        if (isset($_SESSION['user'])) {
 
-        $data = $model->gettOne($id);
-        $data_author = $model->selectAllAuthor();
-        $data_category = $model->selectAllCategory();
+            $this->CallHeader('./src/Views/Admin/Layout/Header.php');
+            $model = $this->CallModel('ProductModel');
+
+            $data = $model->gettOne($id);
+            $data_author = $model->selectAllAuthor();
+            $data_category = $model->selectAllCategory();
 
 
-        $this->CallViewAdmin('Bookedit', $data, $data_author, $data_category );
-        $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+            $this->CallViewAdmin('Bookedit', $data, $data_author, $data_category);
+            $this->CallFooter('./src/Views/Admin/Layout/Footer.php');
+        }
     }
 
     function handleEdit()
     {
-        if (isset($_POST['button_edit'])) {
+        if (isset($_SESSION['user'])) {
+
+            if (isset($_POST['button_edit'])) {
 
 
-            $model = $this->CallModel('ProductModel');
+                $model = $this->CallModel('ProductModel');
 
-            $id = $_POST['id_book'];
+                $id = $_POST['id_book'];
 
-            $data = [
-                'name' => $_POST['name_book'],
-                'price' => $_POST['price_book'],
-                'img' => $_POST["img_book"],
-                'up_img' => $_FILES["up_img_book"],
-                'publication_year' => $_POST['date_publication'],
-                'description' => $_POST['description_book'],
-                'id_category' => $_POST['name_cate'],
-                'id_author' => $_POST['name_author']
-            ];
+                $data = [
+                    'name' => $_POST['name_book'],
+                    'price' => $_POST['price_book'],
+                    'img' => $_POST["img_book"],
+                    'up_img' => $_FILES["up_img_book"],
+                    'publication_year' => $_POST['date_publication'],
+                    'description' => $_POST['description_book'],
+                    'id_category' => $_POST['name_cate'],
+                    'id_author' => $_POST['name_author']
+                ];
 
-            $model->editBook($id, $data);
+                $model->editBook($id, $data);
+            }
         }
     }
 }
